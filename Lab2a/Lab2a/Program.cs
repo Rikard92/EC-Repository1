@@ -15,6 +15,7 @@ namespace Lab2a
             //spapa deck klass
             //skapa dealer klass
             int i = 0;
+            int j = 1;
         }
     }
 }
