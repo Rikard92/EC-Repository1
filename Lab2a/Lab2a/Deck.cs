@@ -8,6 +8,44 @@ namespace Lab2a
 {
     class Deck
     {
+        Random rng = new Random();
+        List<Card> TheDeck;
+
+        public Deck()
+        {
+            for(int kind=1; kind <5; kind++)
+            {
+                for (int type=0; type< 14; type++)
+                {
+                    Card thecard = new Card(kind, type);
+                    TheDeck.Add(thecard);
+
+                }
+
+            }
+
+
+        }
+
+        public void Shufel()
+        {
+            
+
+            int n = TheDeck.Count();
+
+            for(int i=0; i<n; i++)
+            {
+                int k = rng.Next(i+1);
+                Card tempcard = TheDeck[k];
+                TheDeck[k] = TheDeck[i];
+                TheDeck[i] = tempcard;
+
+
+            }
+        }
+
+
+
 
 
     }

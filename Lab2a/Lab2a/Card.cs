@@ -12,15 +12,31 @@ namespace Lab2a
         // 2 Clover
         // 3 Diemond
         // 4 Spades
-        int type;
+        int kind;
+
 
         // 0 Ace
         // 1-10 number
         // 11 jack 
         // 12 queen
         // 13 king
-        int kind;
+        int type;
 
+        public Card(int kind, int type)
+        {
+            this.type = type;
+            this.kind = kind;
+        }
+
+        int GetType()
+        {
+            return type;
+        }
+
+        int GetKind()
+        {
+            return kind;
+        }
 
     }
 }

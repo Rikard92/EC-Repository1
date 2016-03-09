@@ -8,5 +8,8 @@ namespace Lab2a
 {
     class GameBoard
     {
+
+
+
     }
 }
