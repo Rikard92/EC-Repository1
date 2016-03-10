@@ -28,7 +28,7 @@ namespace Lab2a
             this.kind = kind;
         }
 
-        int GetType()
+        int GettheType()
         {
             return type;
         }

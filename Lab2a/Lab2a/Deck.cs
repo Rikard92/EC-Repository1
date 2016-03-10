@@ -21,10 +21,7 @@ namespace Lab2a
                     TheDeck.Add(thecard);
 
                 }
-
             }
-
-
         }
 
         public void Shufel()
@@ -44,7 +41,14 @@ namespace Lab2a
             }
         }
 
+        public void printDeck()
+        {
+            for(int i=0; i< TheDeck.Count(); i++)
+            {
+                Console.WriteLine(TheDeck[i].GetType()+ ","+ TheDeck[i].);
 
+            }
+        }
 
 
 

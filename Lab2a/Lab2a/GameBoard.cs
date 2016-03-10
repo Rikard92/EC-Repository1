@@ -8,7 +8,7 @@ namespace Lab2a
 {
     class GameBoard
     {
-
+        Deck BJDeck = new Deck();
 
 
     }
