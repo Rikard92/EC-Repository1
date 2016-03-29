@@ -13,12 +13,18 @@ namespace Lab2a
 
         public Deck()
         {
-            for(int kind=1; kind <5; kind++)
+
+            TheDeck = new List<Card>();
+
+            for (int kind=1; kind <5; kind++)
             {
-                for (int type=0; type< 14; type++)
+                for (int type=1; type< 14; type++)
                 {
+
                     Card thecard = new Card(kind, type);
-                    TheDeck.Add(thecard);
+                    
+                        TheDeck.Add(thecard);
+
 
                 }
             }
@@ -45,11 +51,31 @@ namespace Lab2a
         {
             for(int i=0; i< TheDeck.Count(); i++)
             {
-                Console.WriteLine(TheDeck[i].GetType()+ ","+ TheDeck[i].);
 
+                Card thecard = TheDeck[i];
+                Console.WriteLine(thecard.GettheType()+", "+thecard.GetKind());
+                
             }
+
+            Console.WriteLine(TheDeck.Count());
         }
 
+
+
+        public int getDecsize()
+        {
+            return TheDeck.Count();
+        }
+
+        public Card getaCard()
+        {
+            Card aCard = TheDeck.First<Card>();
+            TheDeck.RemoveAt(0);
+
+
+
+            return aCard;
+        }
 
 
     }

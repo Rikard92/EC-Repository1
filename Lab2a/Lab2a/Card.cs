@@ -10,13 +10,21 @@ namespace Lab2a
     {
         // 1 Hearts
         // 2 Clover
-        // 3 Diemond
+        // 3 Dimond
         // 4 Spades
         int kind;
 
+        enum cardkind
+        {
+            Hearts =1,
+            Clover =2,
+            Dimond =3,
+            Spades =4
+        }
 
-        // 0 Ace
-        // 1-10 number
+
+        // 1 Ace
+        // 2-10 number
         // 11 jack 
         // 12 queen
         // 13 king
@@ -28,12 +36,12 @@ namespace Lab2a
             this.kind = kind;
         }
 
-        int GettheType()
+        public int GettheType()
         {
             return type;
         }
 
-        int GetKind()
+        public int GetKind()
         {
             return kind;
         }

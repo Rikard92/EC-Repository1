@@ -8,8 +8,25 @@ namespace Lab2a
 {
     class Dealer
     {
+        Deck BJDeck;
+        int dealercash;
+
+        public Dealer()
+        {
+            BJDeck = new Deck();
+            BJDeck.Shufel();
+            dealercash= 100;
+        }
 
 
+        public Card Deal()
+        {
+            
+            Card aCard = BJDeck.getaCard();
+
+            return aCard;
+
+        }
 
     }
 }
