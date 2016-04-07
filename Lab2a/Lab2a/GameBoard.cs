@@ -33,6 +33,7 @@ namespace Lab2a
         {
             playerscore = 0;
             dealerscore = 0;
+            Dean.resetDeck();
             Playerhand.Clear();
             Dealerhand.Clear();
         }

@@ -22,6 +22,7 @@ namespace Lab2a
             int thebet=0;
             String s;
 
+            //tänk inom state
 
             Console.WriteLine("Wellcom to game of Black Jack.");
 
@@ -76,7 +77,8 @@ namespace Lab2a
                     if (Table.getDealerScore()<=17)
                     {
                         Table.DealTheDealerCard();
-                    } else if(Table.getPalyerScore()>17 && Table.getDealerScore() <= 17)
+                    }
+                    else if(Table.getPalyerScore()>17 && Table.getDealerScore() < Table.getPalyerScore())
                     {
 
                         Table.DealTheDealerCard();

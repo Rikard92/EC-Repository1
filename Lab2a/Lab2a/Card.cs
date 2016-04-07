@@ -14,15 +14,6 @@ namespace Lab2a
         // 4 Spades
         int kind;
 
-        enum cardkind
-        {
-            Hearts =1,
-            Clover =2,
-            Dimond =3,
-            Spades =4
-        }
-
-
         // 1 Ace
         // 2-10 number
         // 11 jack 
@@ -32,8 +23,10 @@ namespace Lab2a
 
         public Card(int kind, int type)
         {
+   //         this.type = type;
             this.type = type;
             this.kind = kind;
+
         }
 
         public int GettheType()

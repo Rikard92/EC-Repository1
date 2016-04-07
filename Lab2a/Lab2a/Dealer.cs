@@ -28,5 +28,11 @@ namespace Lab2a
 
         }
 
+        public void resetDeck()
+        {
+            BJDeck = new Deck();
+            BJDeck.Shufel();
+        }
+
     }
 }
